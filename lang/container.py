@@ -20,12 +20,12 @@ c2 = { "a": 0, "b": 1,"c": 3, "D": 5}
 c3 = { "a": { "a": 0, "b": 1,"c": 3, "D": 5} ,
        "b": { "a": 0, "b": 1,"c": 3, "D": 5} ,
 }
+c1[ "a"] = 1
 
 if "a" in c3:
     print ("A in c3")
 print ("a3")
-for a,v in c3:
-    print (a , " = " , v )
+
 print ("a3-end")
 #membership testing
 

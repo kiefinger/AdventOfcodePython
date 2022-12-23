@@ -64,14 +64,15 @@ class Graph:
         else:
             return None
 
-    def add_edge(self, frm, to, cost = 0):
+    def add_edge(self, frm, to, cost = 0, unidir = True):
         if frm not in self.vert_dict:
             self.add_vertex(frm)
         if to not in self.vert_dict:
             self.add_vertex(to)
 
         self.vert_dict[frm].add_neighbor(self.vert_dict[to], cost)
-        self.vert_dict[to].add_neighbor(self.vert_dict[frm], cost)
+        if unidir:
+            self.vert_dict[to].add_neighbor(self.vert_dict[frm], cost)
 
     def get_vertices(self):
         return self.vert_dict.keys()
