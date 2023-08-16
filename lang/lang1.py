@@ -36,3 +36,7 @@ for gg in g:
 
 a = set ("abcdaa")
 print ( a)
+
+for circ in range (800):
+    row = (circ // 40) % 6
+    print (circ, row)
