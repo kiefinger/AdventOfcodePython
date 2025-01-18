@@ -31,7 +31,7 @@ for line in data:
     outputs.append(output)
 
 def decode(signal):
-    decoder = defaultdict(lambda: '.')
+    decoder = defaultdict([])
     segs = defaultdict(lambda: [])
 
     for x in signal:
