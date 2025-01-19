@@ -2,7 +2,7 @@ import os
 dir_path = os.path.dirname ( os.path.realpath(__file__))
 
 print (dir_path)
-with open("data/day05-1.txt") as file:
+with open("data/day04-1.txt") as file:
     lines = file.readlines()
 
 par = []
