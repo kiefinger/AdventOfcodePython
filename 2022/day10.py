@@ -1,10 +1,3 @@
-import os
-import re
-import copy
-import algo.graph
-import algo.dijkstra
-
-from collections import defaultdict
 
 insts = []
 with open("data/day10-1.txt") as file:
